@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Your Job Title</p>
+      <h1>Kiryl Zenevich</h1>
+      <p>Junior Frontend Developer</p>
+      <p>Address: Poland, Gdansk</p>
     </header>
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: Your Address</p>
+    <section class="contact">
+      <h2>Contact Information</h2>
+      <p>Email: couzzzn@gmail.com</p>
+      <p>Phone: +48 572 709 049</p>
+      <p>Git: https://github.com/couzzzn</p>
     </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Degree</strong> - University, Year</p>
+    <section class="bio">
+      <h2>About Myself</h2>
+      <p>
+        My name is Kiryl Zenevich, I am a student with a good background in both
+        art and science. I had been making music for 6 years by mixing different
+        sounds to create unique tracks, I just loved it and I did it for myself
+        and my friends when it wasn't popular yet. In addition to making music,
+        I have seven years of experience in Photoshop, where I enhanced,
+        retouched, and transformed everything that came into my frame. My
+        experience as a photographer allows me to capture moments with keen
+        attention to detail and composition. For four years I studied at the
+        Minsk State College of Architecture and Civil Engineering, which gave me
+        a solid technical training. I am currently studying engineering at the
+        Gdańsk Higher School. My passion for remote work, art and interest in
+        exact sciences pushes me to become a front-end developer. I believe that
+        my diverse skill set is a good fit for me in this career.
+      </p>
     </section>
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-            <h3>Job Title</h3>
-            <p>Company Name</p>
-            <p>Years of Employment</p>
-            <p>Job Responsibilities and Achievements</p>
-        </div>
-        <!-- Repeat job sections as needed -->
+    <section class="skills">
+      <h2>Skills and Proficiency</h2>
+      <ul>
+        <li>HTML, CSS, JS</li>
+        <li>Git, GitHub</li>
+        <li>VS Code</li>
+        <li>Adobe Photoshop, Illustrator, AutoCAD</li>
+      </ul>
+      <!-- Repeat job sections as needed -->
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills as needed -->
-        </ul>
+    <section class="code">
+      <h2>Code example</h2>
+      <p>
+        PROBLEM 1: For each purchase, we add a fixed amount of 50 bonus points
+        to your balance. Points expire over time - 3 points expire every
+        day.Calculate what balance the user will have after 7 days if he usually
+        makes a purchase every two days. (The first purchase is made on
+        Tuesday).Calculate how much will be on your balance after 7 days.
+        Display the user's balance on the screen.
+      </p>
+      <code>
+        <pre>
+let Username = "Anton"; //client name
+let StartBalance = 1000; //balance after registration
+let BuyBonus = 50; //bonus for 1 purchase
+let EveryDayFine = 3; //fine for 1 day
+let a = 3; //number of purchases
+let b = 7; //number of days passed
+
+console.log(`Client: ${Username}`);
+console.log(
+  `Bonus Balans = ${StartBalance + BuyBonus * a - b * EveryDayFine} p`
+);
+      </pre
+        >
+      </code>
+    </section>
+    <section class="courses">
+      <h2>Courses</h2>
+      <ul>
+        <li>
+          Frontend-development: basic HTML, CSS и Javascript on netology
+          (completed)
+        </li>
+        <li>HTML, CSS, JS on metanit (in progress)</li>
+        <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+      </ul>
+    </section>
+    <section class="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>Russian (native)</li>
+        <li>Belarusssian (native)</li>
+        <li>English (B1)</li>
+        <li>Polish (B2)</li>
+      </ul>
     </section>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; handmade by Kiryl Zenevich. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
