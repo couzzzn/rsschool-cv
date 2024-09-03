@@ -1,47 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Job Title</p>
+    <link
+      type="image/x-icon"
+      href="/assets/img/3757968.ico"
+      rel="shortcut icon"
+    />
+    <link type="Image/x-icon" href="/assets/img/3757968.ico" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header-left">
+      <div class="header-info">
+        <img
+          class="me-img"
+          src="assets/img/IMG_0353.jpg"
+          alt="Author's CV photo"
+        />
+        <h1 class="name">Kiryl Zenevich</h1>
+        <p class="job-title">Junior Frontend Developer</p>
+        <p class="address">Poland, Gdansk</p>
+      </div>
     </header>
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: Your Address</p>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Degree</strong> - University, Year</p>
-    </section>
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-            <h3>Job Title</h3>
-            <p>Company Name</p>
-            <p>Years of Employment</p>
-            <p>Job Responsibilities and Achievements</p>
-        </div>
-        <!-- Repeat job sections as needed -->
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills as needed -->
+    <main class="main-right">
+      <nav class="navigation-menu">
+        <button class="drop-button" onclick="myFunction()">
+          CV Navigation
+        </button>
+        <ul class="navigation-list" id="dropdown-list">
+          <li class="navigation-list-element">
+            <a href="#title-contact">Contact Information</a>
+          </li>
+          <li class="navigation-list-element">
+            <a href="#title-bio">About Myself</a>
+          </li>
+          <li class="navigation-list-element">
+            <a href="#title-skills">Skills and Proficiency</a>
+          </li>
+          <li class="navigation-list-element">
+            <a href="#title-code">Code example</a>
+          </li>
+          <li class="navigation-list-element">
+            <a href="#title-courses">Courses</a>
+          </li>
+          <li class="navigation-list-element">
+            <a href="#title-languages">Languages</a>
+          </li>
         </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </nav>
+      <section class="contact">
+        <h2 id="title-contact">Contact Information</h2>
+        <ul class="contact-list">
+          <li class="contact-list-element">
+            <i class="material-icons">headset_mic</i> Discord:
+            <a class="discord" href="https://discord.com/">@couzzzn</a>
+          </li>
+          <li class="contact-list-element">
+            <i class="material-icons">device_hub</i> GitHub:
+            <a class="git-hub" href="https://github.com/couzzzn">couzzzn</a>
+          </li>
+          <li class="contact-list-element">
+            <i class="material-icons">mail</i> Email:
+            <a class="mail" href="mailto:couzzzn@gmail.com&body=привет"
+              >couzzzn@gmail.com</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="bio">
+        <h2 id="title-bio">About Myself</h2>
+        <p>
+          My name is Kiryl Zenevich.<br />
+          I am a student with a good background in both art and science. I had
+          been making music for 6 years by mixing different sounds to create
+          unique tracks, because I just loved it and I did it for myself when it
+          wasn't popular yet.<br />
+          In addition to making music, I have seven years of experience in
+          Photoshop, where I enhanced, retouched, and transformed everything
+          that came into my frame. My experience as a photographer allows me to
+          capture moments with keen attention to detail and composition.<br />
+          For four years I studied at the Minsk State College of Architecture
+          and Civil Engineering, which gave me a solid technical training. I am
+          currently studying engineering at the Gdańsk Higher School.<br />
+          My passion for remote work, art and interest in exact sciences pushes
+          me to become a front-end developer. I believe that my diverse skill
+          set is a good fit for me in this career.
+        </p>
+      </section>
+      <section class="skills">
+        <h2 id="title-skills">Skills and Proficiency</h2>
+        <ul class="common-list">
+          <li class="common-list-element">HTML, CSS, JS</li>
+          <li class="common-list-element">Git, GitHub</li>
+          <li class="common-list-element">VS Code</li>
+          <li class="common-list-element">
+            Adobe Photoshop, Illustrator, AutoCAD
+          </li>
+        </ul>
+        <!-- Repeat job sections as needed -->
+      </section>
+      <section class="code">
+        <h2 id="title-code">Code example</h2>
+        <p>
+          PROBLEM: <br />For each purchase, we add a fixed amount of 50 bonus
+          points to your balance. Points expire over time - 3 points expire
+          every day. Calculate what balance the user will have after 7 days if
+          he usually makes a purchase every two days. (The first purchase is
+          made on Tuesday). Calculate how much will be on your balance after 7
+          days. Display the user's balance on the screen.
+        </p>
+        <br />
+        <p>SOLUTION:</p>
+        <div class="code-example">
+          <pre><code>
+            
+let Username = "Anton"; //client name
+let StartBalance = 1000; //balance after registration
+let BuyBonus = 50; //bonus for 1 purchase
+let EveryDayFine = 3; //fine for 1 day
+let a = 3; //number of purchases
+let b = 7; //number of days passed
+
+console.log(`Client: ${Username}`);
+console.log(
+  `Bonus Balans = ${StartBalance + BuyBonus * a - b * EveryDayFine} p`
+);
+      
+          </code></pre>
+        </div>
+      </section>
+      <section class="courses">
+        <h2 id="title-courses">Courses</h2>
+        <ul class="common-list">
+          <li class="common-list-element">
+            Frontend-development: basic HTML, CSS и Javascript on netology
+            (completed)
+          </li>
+          <li class="common-list-element">
+            HTML, CSS, JS on metanit (in progress)
+          </li>
+          <li class="common-list-element">
+            RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+          </li>
+        </ul>
+      </section>
+      <section class="languages">
+        <h2 id="title-languages">Languages</h2>
+        <ul class="common-list">
+          <li class="common-list-element">Russian (native)</li>
+          <li class="common-list-element">Belarusssian (native)</li>
+          <li class="common-list-element">English (B1)</li>
+          <li class="common-list-element">Polish (B2)</li>
+        </ul>
+      </section>
+      <a class="up" href="#">To The Moon </a>
+    </main>
+    <footer class="footer-right">
+      <span>&copy; handmade by Kiryl Zenevich. All rights reserved.</span>
     </footer>
-</body>
+  </body>
 </html>
