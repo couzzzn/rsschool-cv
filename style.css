@@ -2,7 +2,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red;
+  
   margin: 0;
   padding: 0;
 }
@@ -10,9 +10,9 @@
   --main-yellow: #a39e1072;
   --back-yellow: #909065;
   --main-black: black;
-  --second-black: rgba(0, 0, 0, 0.75);
-  --third-black: rgba(0, 0, 0, 0.025);
-  --main-grey: #333;
+  --second-black: rgb(30, 30, 30);
+  --third-black: rgb(244, 244, 244);
+  --main-grey: rgb(42, 42, 42);
 }
 
 body {
@@ -30,19 +30,19 @@ body {
 
 .header-left {
   text-align: center;
-  padding: 0px;
+  padding: 10% 5% 5% 5%;
   margin: 0px;
+  position: fixed;
+  width: 33.33%; 
+  min-width: 256px;
+  height: 100%;
   background-color: var(--third-black);
   color: var(--second-black);
-  float: right;
-  height: 100%;
-  min-width: 256px;
-  position: fixed;
-  width: 33.33%;
 }
 .header-info {
-  margin: 150px 50px 50px 50px;
-  padding: 50px 50px 50px 50px;
+  margin: 150px 0px 0px 0px;
+  padding: 50px;
+  display: contents;
 }
 .me-img {
   border-radius: 50px;
@@ -78,8 +78,9 @@ body {
   height: 100%;
   position: relative;
   width: 66.66%;
-  margin: 5px;
+  margin: 0px;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .drop-button:hover,
@@ -92,6 +93,7 @@ body {
   display: inline-block;
   width: 100%;
   margin: 20px 0px;
+  border-radius: 5px;
 }
 
 .drop-button {
@@ -106,13 +108,14 @@ body {
   position: relative;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 .navigation-list {
   display: none;
   position: absolute;
   color: black;
-  background-color: var(--main-grey);
-  border-radius: 0%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
   min-width: 160px;
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
@@ -120,15 +123,14 @@ body {
 
 .navigation-list-element {
   padding: 10px 20px;
-  margin: 1px;
+  margin: 5px;
   display: block;
-  border-radius: 0%;
+  border-radius: 10px;
 }
 
 .navigation-list-element a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 5px;
 }
 .navigation-list-element a:hover,
 .navigation-list-element a:focus,
@@ -142,26 +144,17 @@ body {
   display: block;
 }
 
-.footer-right {
-  float: right;
-  height: 100%;
-  position: relative;
-  width: 66.66%;
-  text-align: center;
-}
+
 
 section {
   margin-bottom: 20px;
 }
 
 h2 {
-  border-bottom: 2px solid #333;
   margin-bottom: 10px;
   padding-bottom: 5px;
-}
-
-.job {
-  margin-bottom: 10px;
+  background-color: var(--third-black);
+  border-radius: 5px;
 }
 
 ul {
@@ -169,20 +162,16 @@ ul {
 }
 
 ul li {
-  background: #e4e4e4;
+  background: var(--third-black);
   margin-bottom: 5px;
   padding: 10px;
   border-radius: 5px;
 }
 
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  position: static;
-  width: 100%;
-  bottom: 0;
+.code-example {
+  background-color: var(--third-black);
+  border: 1px solid var(--second-black);
+  border-radius: 5px;
 }
 
 .up {
@@ -206,4 +195,15 @@ ul li {
 .up:hover,
 .up:focus {
     background-color: var(--back-yellow); 
+}
+
+.footer-right {
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 66.66%;
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+  color: var(--second-black);
 }
