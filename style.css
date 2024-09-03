@@ -111,6 +111,7 @@ body {
   border-radius: 5px;
 }
 .navigation-list {
+  list-style-type: none;
   display: none;
   position: absolute;
   color: black;
@@ -119,19 +120,24 @@ body {
   min-width: 160px;
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  
 }
 
 .navigation-list-element {
-  padding: 10px 20px;
-  margin: 5px;
-  display: block;
   border-radius: 10px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
 }
 
 .navigation-list-element a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
 }
+
 .navigation-list-element a:hover,
 .navigation-list-element a:focus,
 .navigation-list-element:hover,
@@ -155,11 +161,11 @@ h2 {
   border-radius: 5px;
 }
 
-ul {
+.common-list {
   list-style-type: none;
 }
 
-ul li {
+.common-list-element {
   background: white;
   margin-bottom: 5px;
   padding: 10px;
@@ -167,8 +173,8 @@ ul li {
   border: 1px solid black;
 }
 
-li:focus,
-li:hover {
+.common-list-element:focus,
+.common-list-element:hover {
   background-color: var(--main-yellow);
   color: #ffffff;
 }
