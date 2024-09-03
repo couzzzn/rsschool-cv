@@ -2,7 +2,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  
+
   margin: 0;
   padding: 0;
 }
@@ -33,7 +33,7 @@ body {
   padding: 10% 5% 5% 5%;
   margin: 0px;
   position: fixed;
-  width: 33.33%; 
+  width: 33.33%;
   min-width: 256px;
   height: 100%;
   background-color: var(--third-black);
@@ -144,8 +144,6 @@ body {
   display: block;
 }
 
-
-
 section {
   margin-bottom: 20px;
 }
@@ -162,12 +160,18 @@ ul {
 }
 
 ul li {
-  background: var(--third-black);
+  background: white;
   margin-bottom: 5px;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
+li:focus,
+li:hover {
+  background-color: var(--main-yellow);
+  color: #ffffff;
+}
 .code-example {
   background-color: var(--third-black);
   border: 1px solid var(--second-black);
@@ -189,12 +193,11 @@ ul li {
   position: relative;
   border: none;
   cursor: pointer;
-
 }
 
 .up:hover,
 .up:focus {
-    background-color: var(--back-yellow); 
+  background-color: var(--back-yellow);
 }
 
 .footer-right {
