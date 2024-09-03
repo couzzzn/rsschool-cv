@@ -1,0 +1,280 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-yellow: #a39e1072;
+  --back-yellow: #909065;
+  --main-black: black;
+  --second-black: rgb(30, 30, 30);
+  --third-black: rgb(244, 244, 244);
+  --main-grey: rgb(42, 42, 42);
+}
+
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%;
+  min-height: 100vh;
+  background-color: white;
+  color: var(--main-grey);
+}
+
+.header-left {
+  text-align: center;
+  padding: 10% 5% 5% 5%;
+  margin: 0px;
+  position: fixed;
+  width: 33.33%;
+  min-width: 256px;
+  height: 100%;
+  background-color: var(--third-black);
+  color: var(--second-black);
+}
+.header-info {
+  margin: 150px 0px 0px 0px;
+  padding: 50px;
+  display: contents;
+}
+.me-img {
+  border-radius: 50px;
+  height: 200px;
+  width: 160px;
+  margin: 5px;
+  padding: 0px;
+}
+
+.name {
+  font-size: 200%;
+  line-height: 150%;
+  margin: 0px 5px 10px 5px;
+  padding: 2px;
+}
+
+.job-title {
+  font-size: 110%;
+  line-height: 150%;
+  margin: 2px;
+  padding: 2px;
+}
+
+.address {
+  font-size: 80%;
+  line-height: 150%;
+  margin: 2px;
+  padding: 2px;
+}
+
+.main-right {
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 66.66%;
+  margin: 0px;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.drop-button:hover,
+.drop-button:focus {
+  background-color: var(--back-yellow);
+}
+
+.navigation-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+
+.drop-button {
+  font-weight: 700;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: var(--main-yellow);
+  color: rgb(255, 255, 255);
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.navigation-list {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  
+}
+
+.navigation-list-element {
+  border-radius: 10px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation-list-element a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation-list-element a:hover,
+.navigation-list-element a:focus,
+.navigation-list-element:hover,
+.navigation-list-element:focus {
+  background-color: var(--back-yellow);
+  color: #ffffff;
+}
+
+.show {
+  display: block;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.mail {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--back-yellow);
+  
+}
+
+.discord {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.discord:hover,
+.discord:focus {
+  color: var(--back-yellow);
+  
+}
+
+.git-hub {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.git-hub:hover,
+.git-hub:focus {
+  color: var(--back-yellow);
+  
+}
+
+.contact {
+  vertical-align: middle;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list-element {
+  padding: 5px 0px;
+  margin: 5px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.material-icons {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+  color: var(--main-yellow);
+  font-size: 24px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: var(--third-black);
+  border-radius: 5px;
+}
+
+.common-list {
+  list-style-type: none;
+}
+
+.common-list-element {
+  background: white;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.common-list-element:focus,
+.common-list-element:hover {
+  background-color: var(--main-yellow);
+  color: #ffffff;
+}
+.code-example {
+  background-color: var(--third-black);
+  border: 1px solid var(--second-black);
+  border-radius: 5px;
+}
+
+.up {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--main-yellow);
+  color: rgb(255, 255, 255);
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.up:hover,
+.up:focus {
+  background-color: var(--back-yellow);
+}
+
+.footer-right {
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 66.66%;
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+  color: var(--second-black);
+}
