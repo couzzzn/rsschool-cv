@@ -154,9 +154,71 @@ section {
   margin-bottom: 20px;
 }
 
+.mail {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--back-yellow);
+  
+}
+
+.discord {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.discord:hover,
+.discord:focus {
+  color: var(--back-yellow);
+  
+}
+
+.git-hub {
+  text-decoration: none;
+  color: var(--main-yellow);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.git-hub:hover,
+.git-hub:focus {
+  color: var(--back-yellow);
+  
+}
+
+.contact {
+  vertical-align: middle;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list-element {
+  padding: 5px 0px;
+  margin: 5px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.material-icons {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+  color: var(--main-yellow);
+  font-size: 24px;
+}
+
 h2 {
   margin-bottom: 10px;
-  padding-bottom: 5px;
+  padding: 5px;
   background-color: var(--third-black);
   border-radius: 5px;
 }
